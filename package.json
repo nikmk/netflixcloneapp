@@ -1,5 +1,5 @@
 {
-  "name": "react-hacker",
+  "name": "netflixapp",
   "version": "3.0.0",
   "description": "A simple React starter that's perfect for messing around. Comes with Babel, Emotion CSS in JS, ESlint, and Prettier.",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "webpack --config webpack.config.js",
     "postinstall": "npm run build"
   },
-  "author": "Daniel Zuzevich",
+  "author": "niket kulkarni",
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.10",
