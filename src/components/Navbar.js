@@ -5,7 +5,7 @@ import netflixLogo from '../img/netflix-logo.png'
 
 const leftLinks = ['Home', 'TV Shows', 'Movies', 'Latest', 'My List']
 /*
- *@function Navbar
+ * @function Navbar
  */
 const Navbar = () => {
   const [scrolled, notScrolled] = useState(false)
