@@ -4,23 +4,27 @@ import { jsx, css } from '@emotion/core'
 import Button from './Button'
 import wallpaper from '../img/wallpaper.jpg'
 import logo from '../img/logo.png'
-//import slider from '../img/slider.jpg'
+import slider from '../img/slider.jpg'
 /*
  * @function Jumbotron
  */
 const Jumbotron = () => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
-      <img src={logo} />
-      <p>
-        All he wants to do is leave the town and start all over. But this is not
-        possible in this life. He must deal with his demons outside and the ones
-        that are outside.
-      </p>
-      {/* <Button icon="play">Play</Button>
-      <Button icon="info-circle">More Info</Button> */}
+      <div>
+        <img src={logo} />
+        <p>
+          All he wants to do is leave the town and start all over. But this is
+          not possible in this life. He must deal with his demons outside and
+          the ones that are outside.
+        </p>
+
+        <Button icon="play">Play</Button>
+        <Button icon="info-circle">More Info</Button>
+      </div>
+
+      <img src={slider} alt="slider" className="slider" />
     </div>
-    {/* <img src={slider} alt="slider" className="slider" /> */}
   </div>
 )
 
@@ -49,6 +53,12 @@ const JumbotronCSS = css`
   .ContentRow {
     position: absolute;
     bottom: 20px;
+  }
+  .slider {
+   height: 125px;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 60px);
   }
 `
 export default Jumbotron
